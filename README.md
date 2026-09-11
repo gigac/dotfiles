@@ -8,4 +8,5 @@ Install these tools:
 
 ```
 brew install starship zoxide zsh-autosuggestions fzf eza
+brew install --cask font-jetbrains-mono-nerd-font
 ```
