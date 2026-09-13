@@ -15,6 +15,7 @@ alias gs='git status'
 alias gl='git log --oneline --graph --decorate'
 alias gc='git checkout'
 alias sail='./vendor/bin/sail'
+alias fomo='function mkcdf() { branch=${1:-main}; git fetch origin "$branch"; git merge origin/"$branch"; }; mkcdf'
 
 # eza aliases
 alias l='eza --group-directories-first --icons=auto'
