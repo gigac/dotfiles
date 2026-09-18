@@ -10,6 +10,11 @@ source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
+[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"
+
 # Git aliases
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate'

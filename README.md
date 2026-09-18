@@ -7,7 +7,7 @@ This is configuration for my laptop, including zsh, starship, etc.
 Install these tools:
 
 ```
-brew install starship zoxide zsh-autosuggestions fzf eza neovim ripgrep
+brew install starship zoxide zsh-autosuggestions fzf eza neovim ripgrep nvm
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
@@ -30,6 +30,14 @@ The first time you launch `nvim`, [lazy.nvim](https://github.com/folke/lazy.nvim
 bootstraps itself and installs all plugins, and
 [mason.nvim](https://github.com/williamboman/mason.nvim) installs the
 configured language servers. Let both finish before editing files.
+
+Set up Node via `nvm`:
+
+```
+nvm install --lts
+nvm use --lts
+nvm alias default 'lts/*'
+```
 
 ## Neovim
 
