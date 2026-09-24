@@ -8,7 +8,7 @@ eval "$(zoxide init zsh)"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
